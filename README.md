@@ -41,7 +41,7 @@ blare-bomber/
 ├── resources_rc.py      # Compiled UI resources (icons / images)
 ├── main.py              # Application bootstrap
 ├── requirements.txt     # Python dependency list
-└── LICENSE              # MIT License
+└── LICENSE              # Apache License 2.0
 ```
 
 ---
@@ -97,9 +97,18 @@ Misuse could lead to legal consequences.
 
 ## 📜 License
 
-This project is released under the **MIT License**.
+Copyright © 2026 **Blare** ([GitHub: @Bllare](https://github.com/Bllare))
 
-See LICENSE for details.
+Licensed under the **Apache License 2.0** - see the [LICENSE](LICENSE) file for details.
+
+### 🏷️ Attribution Requirements
+When using, modifying, or distributing this software, you **MUST**:
+
+1. **Keep all copyright notices** intact
+2. **Include a copy** of the Apache License 2.0
+3. **Provide clear attribution** to **Blare (@Bllare)**
+4. **State any modifications** made to the files
+5. **Include attribution** in any user interface or documentation where the software is used
 
 ---
 
