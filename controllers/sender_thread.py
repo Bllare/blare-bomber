@@ -47,8 +47,10 @@ class SenderThread(QThread):
             for api in apis:
                 if self.stop_event.is_set():
                     break
+                
+                api_instance = api()
 
-                worker = SendWorker(api, self.phone, self.stop_event)
+                worker = SendWorker(api_instance, self.phone, self.stop_event)
 
                 # ⚠️ IMPORTANT: queued connections only
                 worker.signals.log.connect(self.log)
