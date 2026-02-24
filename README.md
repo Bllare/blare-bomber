@@ -5,6 +5,11 @@
 > ⚠️ **Important:** This repository is intended for *authorized testing, security research, and educational purposes only*. Misuse (e.g., spamming or attacking systems without consent) may be illegal and unethical.
 
 ---
+## 🎥 Demo
+
+<img width="1618" height="482" alt="blare bomber demo" src="https://github.com/user-attachments/assets/5719dfb3-0be2-48a2-b7cf-7dc610dc914c" />
+
+---
 
 ## 📌 What is blare-bomber?
 
