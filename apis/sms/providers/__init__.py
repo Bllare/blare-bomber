@@ -87,3 +87,4 @@ from .mellishoes import SmsMellishoes
 from .offland import SmsOffland
 from .sorinsport import SmsSorinsport
 from .theshoes import SmsTheshoes
+from .taghche import Taghche
