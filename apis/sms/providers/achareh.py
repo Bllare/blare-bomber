@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class SmsAchareh(SmsProvider):
+class SmsAchareh(PostRequestSmsProvider):
     name = "SMS Achareh"
     url = "https://api.achareh.co/v2/accounts/login/" 
-    method = "POST"
     payload_type = "json"
     
 

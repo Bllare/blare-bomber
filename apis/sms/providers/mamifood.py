@@ -1,11 +1,10 @@
 # Github : https://github.com/Bllare
 
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class SmsMamifood(SmsProvider):
+class SmsMamifood(PostRequestSmsProvider):
     name = "SMS Mamifood"
     url = "https://mamifood.org/Registration.aspx/SendValidationCode"
-    method = "POST"
     payload_type = "json" 
 
 

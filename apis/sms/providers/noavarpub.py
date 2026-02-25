@@ -1,11 +1,10 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
 
-class SmsNoavarpub(SmsProvider):
+class SmsNoavarpub(PostRequestSmsProvider):
     name = "SMS Noavarpub"
     url = "https://noavarpub.com/logins/login.php"
-    method = "POST"
     payload_type = "data"
 
     def get_payload(self, phone: str) -> dict:

@@ -1,4 +1,4 @@
-from .base import SmsProvider
+from .abstract import AbstractSmsProvider
 import apis.sms.providers  # 🔑 STATIC PACKAGE IMPORT
 
-SMS_PROVIDERS = list(SmsProvider._registry)
+SMS_PROVIDERS = list(AbstractSmsProvider._registry)

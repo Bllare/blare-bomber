@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class SmsDastkhatIsad(SmsProvider):
+class SmsDastkhatIsad(PostRequestSmsProvider):
     name = "SMS DastkhatIsad"
     url = "https://dastkhat-isad.ir/api/v1/user/store"
-    method = "POST"
     payload_type = "json"
 
     def get_payload(self, phone: str) -> dict:

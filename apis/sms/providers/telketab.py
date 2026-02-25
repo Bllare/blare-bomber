@@ -1,12 +1,11 @@
 # Github : https://github.com/Bllare
 
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
 
-class SmsTelketab(SmsProvider):
+class SmsTelketab(PostRequestSmsProvider):
     name = "SMS Telketab"
     url = "https://telketab.com/otp_field/check_secret"
-    method = "POST"
     payload_type = "data"
 
     def get_headers(self):

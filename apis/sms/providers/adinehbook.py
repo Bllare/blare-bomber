@@ -1,11 +1,10 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
 
-class SmsAdinehbook(SmsProvider):
+class SmsAdinehbook(PostRequestSmsProvider):
     name = "SMS Adinehbook"
     url = "https://www.adinehbook.com/gp/flex/sign-in.html"
-    method = "POST"
     payload_type = "data"
 
 

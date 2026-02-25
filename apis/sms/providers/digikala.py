@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class SmsDigikala(SmsProvider):
+class SmsDigikala(PostRequestSmsProvider):
     name = "SMS Digikala"
     url = "https://api.digikala.com/v1/user/authenticate/"
-    method = "POST"
     payload_type = "json"
 
 

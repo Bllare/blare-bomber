@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class Pooshakesanli(SmsProvider):
+class Pooshakesanli(PostRequestSmsProvider):
     name = "SMS Pooshakesanli"
     url = "https://pooshakesanli.com/process-request/ajax"
-    method = "POST"
     payload_type = "data"
 
     def get_payload(self, phone):

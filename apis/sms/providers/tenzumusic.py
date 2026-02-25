@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class Tenzumusic(SmsProvider):
+class Tenzumusic(PostRequestSmsProvider):
     name = "SMS Tenzumusic"
     url = "https://napi.tenzumusic.com/user/auth/otp/generate"
-    method = "POST"
     payload_type = "json"
 
     def get_payload(self, phone):

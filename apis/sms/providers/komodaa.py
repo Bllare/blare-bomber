@@ -1,11 +1,10 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
 
-class SmsKomodaa(SmsProvider):
+class SmsKomodaa(PostRequestSmsProvider):
     name = "SMS Komodaa"
     url = "https://api.komodaa.com/api/v2.6/loginRC/request"
-    method = "POST"
     payload_type = "json" 
 
 

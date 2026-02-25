@@ -1,11 +1,10 @@
 # Github : https://github.com/Bllare
 
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class SmsShahrfarsh(SmsProvider):
+class SmsShahrfarsh(PostRequestSmsProvider):
     name = "SMS Shahrfarsh"
     url = "https://shahrfarsh.com/Account/Login"
-    method = "POST"
     payload_type = "json"
 
     def get_payload(self, phone):

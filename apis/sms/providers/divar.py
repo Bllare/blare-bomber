@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class SmsDivar(SmsProvider):
+class SmsDivar(PostRequestSmsProvider):
     name = "SMS Divar"
     url = "https://api.divar.ir/v5/auth/authenticate"
-    method = "POST"
     payload_type = "json"
 
     def get_payload(self, phone):

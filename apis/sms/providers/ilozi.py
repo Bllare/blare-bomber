@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class Ilozi(SmsProvider):
+class Ilozi(PostRequestSmsProvider):
     name = "SMS Ilozi"
     url = "https://ilozi.com/wp-admin/admin-ajax.php"
-    method = "POST"
     payload_type = "params"
 
     def get_payload(self, phone):

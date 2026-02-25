@@ -1,11 +1,10 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
 
-class SmsGapfilm(SmsProvider):
+class SmsGapfilm(PostRequestSmsProvider):
     name = "SMS Gapfilm"
     url = "https://core.gapfilm.ir/api/v3.1/Account/Login"
-    method = "POST"
     payload_type = "json" 
 
 

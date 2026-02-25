@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class Bornosmode(SmsProvider):
+class Bornosmode(PostRequestSmsProvider):
     name = "SMS Bornosmode"
     url = "https://bornosmode.com/api/loginRegister/"
-    method = "POST"
     payload_type = "data"
 
     def get_payload(self, phone):

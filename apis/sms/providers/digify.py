@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class SmsDigify(SmsProvider):
+class SmsDigify(PostRequestSmsProvider):
     name = "SMS Digify"
     url = "https://backend.digify.shop/user/merchant/otp/"
-    method = "POST"
     payload_type = "json"
 
     def get_headers(self):

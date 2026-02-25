@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class SmsRefahtea(SmsProvider):
+class SmsRefahtea(PostRequestSmsProvider):
     name = "SMS Refahtea"
     url = "https://refahtea.ir/wp-admin/admin-ajax.php"
-    method = "POST"
     payload_type = "data"
 
     def get_payload(self, phone):

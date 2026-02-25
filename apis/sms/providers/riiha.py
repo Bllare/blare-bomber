@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class Riiha(SmsProvider):
+class Riiha(PostRequestSmsProvider):
     name = "SMS Riiha"
     url = "https://www.riiha.ir/api/v1.0/authenticate"
-    method = "POST"
     payload_type = "data"
 
     def get_payload(self, phone):

@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class Hippokidz(SmsProvider):
+class Hippokidz(PostRequestSmsProvider):
     name = "SMS Hippokidz"
     url = "https://hippokidz.ir/wp-admin/admin-ajax.php"
-    method = "POST"
     payload_type = "data"
 
     def get_payload(self, phone):

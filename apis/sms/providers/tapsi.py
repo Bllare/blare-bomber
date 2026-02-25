@@ -1,11 +1,10 @@
 # Github : https://github.com/Bllare
 
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class SmsTapsi(SmsProvider):
+class SmsTapsi(PostRequestSmsProvider):
     name = "SMS Tapsi"
     url = "https://api.tapsi.ir/api/v2.2/user"
-    method = "POST"
     payload_type = "json"
 
     def get_payload(self, phone):

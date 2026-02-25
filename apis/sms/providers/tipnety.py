@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class Tipnety(SmsProvider):
+class Tipnety(PostRequestSmsProvider):
     name = "SMS Tipnety"
     url = "https://tipnety.com/api/v1/auth/otp/send"
-    method = "POST"
     payload_type = "json"
 
     def get_payload(self, phone):

@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class Alvandstock(SmsProvider):
+class Alvandstock(PostRequestSmsProvider):
     name = "SMS Alvandstock"
     url = "https://alvandstock.com/wp-admin/admin-ajax.php"
-    method = "POST"
     payload_type = "data"
 
     def get_payload(self, phone):

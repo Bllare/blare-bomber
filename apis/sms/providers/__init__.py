@@ -1,5 +1,3 @@
-from .test import Test
-
 from .divar import SmsDivar
 from .achareh import SmsAchareh
 from .alibaba import SmsAlibaba

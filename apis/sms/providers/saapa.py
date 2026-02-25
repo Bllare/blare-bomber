@@ -1,11 +1,10 @@
 # Github : https://github.com/Bllare
 
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class SmsSaapa(SmsProvider):
+class SmsSaapa(PostRequestSmsProvider):
     name = "SMS Saapa"
     url = "https://uiapi2.saapa.ir/api/otp/sendCode"
-    method = "POST"
     payload_type = "json"
 
     def get_payload(self, phone):

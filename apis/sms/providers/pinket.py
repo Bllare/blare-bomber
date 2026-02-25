@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class SmsPinket(SmsProvider):
+class SmsPinket(PostRequestSmsProvider):
     name = "SMS Pinket"
     url = "https://pinket.com/api/cu/v2/phone-verification"
-    method = "POST"
     payload_type = "json"
 
     def get_payload(self, phone):

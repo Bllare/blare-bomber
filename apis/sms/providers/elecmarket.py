@@ -1,11 +1,10 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
 
-class SmsElecmarket(SmsProvider):
+class SmsElecmarket(PostRequestSmsProvider):
     name = "SMS Elecmarket"
     url = "https://elecmarket.ir/wp-admin/admin-ajax.php"
-    method = "POST"
     payload_type = "json"
 
     def get_payload(self, phone):

@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class Footini(SmsProvider):
+class Footini(PostRequestSmsProvider):
     name = "SMS Footini"
     url = "https://footini.ir/wp-admin/admin-ajax.php"
-    method = "POST"
     payload_type = "params"
 
     def get_payload(self, phone):

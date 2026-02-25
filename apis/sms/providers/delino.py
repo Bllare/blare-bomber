@@ -1,11 +1,10 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
 
-class SmsDelino(SmsProvider):
+class SmsDelino(PostRequestSmsProvider):
     name = "SMS Delino"
     url = "https://www.delino.com/user/register"
-    method = "POST"
     payload_type = "data"
 
     def get_headers(self):

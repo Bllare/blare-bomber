@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class Sazkala(SmsProvider):
+class Sazkala(PostRequestSmsProvider):
     name = "SMS Sazkala"
     url = "https://sazkala.com/new-register-login/"
-    method = "POST"
     payload_type = "data"
 
     def get_payload(self, phone):

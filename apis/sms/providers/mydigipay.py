@@ -1,11 +1,10 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 import uuid
 
-class SmsMydigipay(SmsProvider):
+class SmsMydigipay(PostRequestSmsProvider):
     name = "SMS Mydigipay"
     url = "https://app.mydigipay.com/digipay/api/users/send-sms" 
-    method = "POST"
     payload_type = "json" 
 
     def get_payload(self, phone):

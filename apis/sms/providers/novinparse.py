@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class SmsNovinparse(SmsProvider):
+class SmsNovinparse(PostRequestSmsProvider):
     name = "SMS Novinparse"
     url = "https://novinparse.com/Page/PageAction.aspx"
-    method = "POST"
     payload_type = "data"
 
     def get_payload(self, phone):

@@ -1,10 +1,9 @@
 # Github : https://github.com/Bllare
-from apis.sms.base import SmsProvider
+from apis.sms.base import PostRequestSmsProvider
 
-class Basalam(SmsProvider):
+class Basalam(PostRequestSmsProvider):
     name = "SMS Basalam"
     url = "https://services.basalam.com/web/v1/auth/captcha/otp-request"
-    method = "POST"
     payload_type = "json"
 
     def get_payload(self, phone):
