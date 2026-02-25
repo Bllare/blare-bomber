@@ -59,3 +59,14 @@ from .sazkala import Sazkala
 from .sorrad import Sorrad
 from .tenzumusic import Tenzumusic
 from .tipnety import Tipnety
+from .bikoplus import SmsBikoplus
+from .cactusleather import SmsCactusleather
+from .charsoonet import SmsCharsoonet
+from .hajamooo import SmsHajamooo
+from .jeanswest import SmsJeanswest
+from .kalatitr import SmsKalatitr
+from .maxbax import SmsMaxbax
+from .mellishoes import SmsMellishoes
+from .offland import SmsOffland
+from .sorinsport import SmsSorinsport
+from .theshoes import SmsTheshoes
