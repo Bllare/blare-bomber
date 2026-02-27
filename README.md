@@ -1,8 +1,17 @@
 # blare-bomber
 
-**blare-bomber** — A powerful **SMS Bomber** and **اسمس بمبر** tool with a clean Python GUI and extendable backend controllers for automated message testing and development.
+**blare-bomber** — A powerful SMS Bomber and اسمس بمبر tool with a clean Python GUI and extendable backend controllers for automated message testing and development.
 
-> ⚠️ **Important:** This repository is intended for *authorized testing, security research, and educational purposes only*. Misuse (e.g., spamming or attacking systems without consent) may be illegal and unethical.
+<h2 align="center">⬇️ Download for Windows | دانلود نسخه ویندوز</h2>
+
+<p align="center">
+  <a href="https://github.com/Bllare/blare-bomber/releases/latest/download/BlareBomber.exe">
+    <img src="https://img.shields.io/badge/Download-For%20Windows-success?style=for-the-badge&logo=windows&logoColor=white" />
+  </a>
+</p>
+
+
+> ⚠️ **Important:** This repository is intended for authorized testing, security research, and educational purposes only.
 
 ---
 ## 🎥 Demo
@@ -73,7 +82,7 @@ Follow on-screen instructions to:
 
 1. Enter your test target (authorized use only)
 2. Configure send delay
-4. Click on start thro UI
+4. Click Start through the UI
 
 ---
 
