@@ -4,6 +4,7 @@ from apis.status import SendStatus
 import requests
 
 class Lipak(AbstractSmsProvider):
+    name = "SMS Lipak"
     url = "https://lipak.com/api/v1/auth/init"
 
     def send_request(self, phone_number):
